@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nicproject - Karya</title>
+    <link rel="icon" type="image/x-icon" href="nicproject.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="karya.css" />
+  </head>
+  <body>
+    <div id="page">
+      <div id="realheader">
+        <div id="header">
+          <div class="logo-area">
+            <a href="index.html">NICHOPROJECT</a>
+          </div>
+          <nav>
+            <a href="index.html">Description</a>
+            <a href="Skill.html">SkillSet</a>
+            <a href="karya.html">Karya</a>
+          </nav>
+        </div>
+      </div>
+
+      <div id="body">
+        <div id="title">
+          <h1>Daftar Karya</h1>
+        </div>
+
+        <div id="phytonmain">
+          <div id="texsphyton"><h1>Python</h1></div>
+          <div id="videophyton">
+            <video controls autoplay muted loop src="Phyton-Project.mp4"></video>
+          </div>
+        </div>
+
+        <div id="javamain">
+          <div id="videojava">
+            <video controls autoplay muted loop src="Java-Project.mp4"></video>
+          </div>
+          <div id="texsjava"><h1>Java</h1></div>
+        </div>
+
+        <div id="wordmain">
+          <div id="texsword"><h1>Word</h1></div>
+          <div id="videoword">
+            <video controls autoplay muted loop src="word-project.mp4"></video>
+          </div>
+        </div>
+
+        <div id="canvamain">
+          <div id="videocanva">
+            <video controls autoplay muted loop src="Canva 2026-04-12 00-42-02.mp4"></video>
+          </div>
+          <div id="texscanva"><h1>Canva</h1></div>
+        </div>
+
+        <div id="powerpointmain">
+          <div id="texspowerpoint"><h1>PowerPoint</h1></div>
+          <div id="videopowerpoint">
+            <video controls autoplay muted loop src="powerpoint-Project.mp4"></video>
+          </div>
+        </div>
+
+        <div id="excelmain">
+          <div id="fotoexcel">
+            <img src="workexcel.png" alt="Excel project" />
+          </div>
+          <div id="texsexcel"><h1>Excel</h1></div>
+        </div>
+
+        <div id="ilustratormain">
+          <div id="texsilustrator"><h1>Illustrator</h1></div>
+          <div id="fotoilustrator">
+            <img src="adobe-ilustrator.png" alt="Illustrator project" />
+          </div>
+        </div>
+
+        <div id="photoshopmain">
+          <div id="fotophotoshop">
+            <img src="project-photoshop.png" alt="Photoshop project" />
+          </div>
+          <div id="texsphotoshop"><h1>Photoshop</h1></div>
+        </div>
+
+        <div id="webmain">
+          <div id="texsweb"><h1>WEB</h1></div>
+          <div id="videoweb">
+            <video controls autoplay muted loop src="WEBdevelopment-Project.mp4"></video>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="footer-container">
+          <div class="footer-kolomP">
+            <ul>
+              <li><a href="index.html" class="footer-project-name"><img src="nicproject.png" alt="Logo" /></a></li>
+            </ul>
+          </div>
+          <div class="footer-kolom">
+            <h3>Karya</h3>
+            <div class="footer-kolom-pisah">
+              <ul>
+                <li><a href="#phytonmain">Python</a></li>
+                <li><a href="#javamain">Java</a></li>
+                <li><a href="#wordmain">Word</a></li>
+                <li><a href="#canvamain">Canva</a></li>
+                <li><a href="#powerpointmain">PowerPoint</a></li>
+              </ul>
+              <ul>
+                <li><a href="#excelmain">Excel</a></li>
+                <li><a href="#ilustratormain">Illustrator</a></li>
+                <li><a href="#photoshopmain">Photoshop</a></li>
+                <li><a href="#webmain">Web</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-kolom">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="index.html">Description</a></li>
+              <li><a href="Skill.html">Skillset</a></li>
+              <li><a href="karya.html">Karya</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bawah">
+          <p>© 2026 Nicholas Project | All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var navLinks = document.querySelectorAll("nav a");
+      for (var i = 0; i < navLinks.length; i++) {
+        if (navLinks[i].href.includes("karya")) {
+          navLinks[i].style.background   = "#B85C4A";
+          navLinks[i].style.borderRadius = "8px";
+          navLinks[i].style.color        = "#E8DFD0";
+          navLinks[i].style.fontWeight   = "bold";
+        }
+      }
+
+      var projectCards = document.querySelectorAll(
+        "#phytonmain, #javamain, #wordmain, #canvamain, #powerpointmain, #excelmain, #ilustratormain, #photoshopmain, #webmain"
+      );
+
+      for (var j = 0; j < projectCards.length; j++) {
+        projectCards[j].style.opacity    = "0";
+        projectCards[j].style.transform  = "translateY(60px)";
+        projectCards[j].style.transition = "opacity 0.7s ease, transform 0.7s ease";
+      }
+
+      function checkCards() {
+        for (var k = 0; k < projectCards.length; k++) {
+          var elementTop = projectCards[k].offsetTop;
+          if (window.scrollY + window.innerHeight - 60 > elementTop) {
+            projectCards[k].style.opacity   = "1";
+            projectCards[k].style.transform = "translateY(0)";
+          }
+        }
+      }
+
+      window.addEventListener("scroll", checkCards);
+      window.addEventListener("load",   checkCards);
+
+      var progressBar = document.createElement("div");
+      progressBar.style.position   = "fixed";
+      progressBar.style.top        = "0";
+      progressBar.style.left       = "0";
+      progressBar.style.height     = "3px";
+      progressBar.style.width      = "0%";
+      progressBar.style.background = "#C0604A";
+      progressBar.style.zIndex     = "99999";
+      document.body.appendChild(progressBar);
+
+      window.addEventListener("scroll", function () {
+        var scrolled        = window.scrollY;
+        var totalScrollable = document.body.scrollHeight - window.innerHeight;
+        progressBar.style.width = (scrolled / totalScrollable) * 100 + "%";
+      });
+
+      var topButton = document.createElement("button");
+      topButton.textContent        = "↑";
+      topButton.style.position     = "fixed";
+      topButton.style.bottom       = "30px";
+      topButton.style.right        = "30px";
+      topButton.style.zIndex       = "999";
+      topButton.style.width        = "50px";
+      topButton.style.height       = "50px";
+      topButton.style.borderRadius = "50%";
+      topButton.style.border       = "2px solid #C0604A";
+      topButton.style.background   = "#1C2E2A";
+      topButton.style.color        = "#C0604A";
+      topButton.style.fontSize     = "20px";
+      topButton.style.fontWeight   = "bold";
+      topButton.style.cursor       = "pointer";
+      topButton.style.opacity      = "0";
+      topButton.style.transition   = "opacity 0.3s, transform 0.3s";
+      topButton.addEventListener("mouseenter", function () { this.style.transform = "scale(1.15)"; });
+      topButton.addEventListener("mouseleave", function () { this.style.transform = "scale(1)"; });
+      topButton.addEventListener("click",      function () { window.scrollTo({ top: 0, behavior: "smooth" }); });
+      document.body.appendChild(topButton);
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+          topButton.style.opacity       = "1";
+          topButton.style.pointerEvents = "auto";
+        } else {
+          topButton.style.opacity       = "0";
+          topButton.style.pointerEvents = "none";
+        }
+      });
+
+      var sectionNames = ["Python","Java","Word","Canva","PowerPoint","Excel","Illustrator","Photoshop","WEB"];
+
+      var badge = document.createElement("div");
+      badge.id                 = "scrollBadge";
+      badge.style.position     = "fixed";
+      badge.style.bottom       = "90px";
+      badge.style.right        = "30px";
+      badge.style.zIndex       = "9999";
+      badge.style.background   = "#1C2E2A";
+      badge.style.color        = "#C0604A";
+      badge.style.border       = "1px solid #C0604A";
+      badge.style.padding      = "8px 16px";
+      badge.style.borderRadius = "20px";
+      badge.style.fontFamily   = "Arial, sans-serif";
+      badge.style.fontSize     = "11pt";
+      badge.style.fontWeight   = "bold";
+      badge.textContent        = "Scroll to explore · 0/" + projectCards.length;
+      document.body.appendChild(badge);
+
+      function checkBadge() {
+        for (var n = 0; n < projectCards.length; n++) {
+          var elementTop    = projectCards[n].offsetTop;
+          var elementBottom = elementTop + projectCards[n].offsetHeight;
+          if (window.scrollY + window.innerHeight * 0.6 > elementTop && window.scrollY < elementBottom) {
+            badge.textContent = sectionNames[n] + " · " + (n + 1) + "/" + projectCards.length;
+            break;
+          }
+        }
+      }
+
+      window.addEventListener("scroll", checkBadge);
+      window.addEventListener("load",   checkBadge);
+    </script>
+  </body>
+</html>

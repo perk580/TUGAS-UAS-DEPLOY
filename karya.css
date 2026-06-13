@@ -1,0 +1,274 @@
+#page {
+  background-color: #E8DFD0;
+  min-height: 100vh;
+}
+
+#body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#title {
+  text-align: center;
+}
+
+#title h1 {
+  font-family: Georgia, serif;
+  font-size: 34pt;
+  font-weight: bold;
+  color: #2D3B3E;
+  margin: 0 0 20px 0;
+}
+
+#phytonmain,
+#javamain,
+#wordmain,
+#canvamain,
+#powerpointmain,
+#excelmain,
+#ilustratormain,
+#photoshopmain,
+#webmain {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #FAF7F2;
+  border: 1px solid #D4C8BA;
+  border-left: 4px solid #B85C4A;
+  border-radius: 16px;
+  padding: 40px;
+  transition: box-shadow 0.3s;
+}
+
+#phytonmain:hover,
+#javamain:hover,
+#wordmain:hover,
+#canvamain:hover,
+#powerpointmain:hover,
+#excelmain:hover,
+#ilustratormain:hover,
+#photoshopmain:hover,
+#webmain:hover {
+  box-shadow: 0 4px 24px rgba(90, 128, 128, 0.15);
+}
+
+#texsphyton,
+#texsjava,
+#texsword,
+#texscanva,
+#texspowerpoint,
+#texsexcel,
+#texsilustrator,
+#texsphotoshop,
+#texsweb {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#texsphyton h1,
+#texsjava h1,
+#texsword h1,
+#texscanva h1,
+#texspowerpoint h1,
+#texsexcel h1,
+#texsilustrator h1,
+#texsphotoshop h1,
+#texsweb h1 {
+  font-family: Georgia, serif;
+  font-size: 52pt;
+  font-weight: bold;
+  color: #2D3B3E;
+  margin: 0;
+  transition: color 0.3s;
+}
+
+#texsphyton h1:hover,
+#texsjava h1:hover,
+#texsword h1:hover,
+#texscanva h1:hover,
+#texspowerpoint h1:hover,
+#texsexcel h1:hover,
+#texsilustrator h1:hover,
+#texsphotoshop h1:hover,
+#texsweb h1:hover {
+  color: #B85C4A;
+}
+
+#videophyton,
+#videojava,
+#videoword,
+#videocanva,
+#videopowerpoint,
+#videoweb {
+  flex: 1;
+  min-width: 0;
+}
+
+video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  background-color: #2D3B3E;
+}
+
+#fotoexcel,
+#fotoilustrator,
+#fotophotoshop {
+  flex: 1;
+  min-width: 0;
+}
+
+#fotoexcel img,
+#fotoilustrator img,
+#fotophotoshop img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+#page {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+
+
+#videophyton video,
+#videojava video,
+#videoword video,
+#videocanva video,
+#videopowerpoint video,
+#videoweb video,
+#fotoexcel img,
+#fotoilustrator img,
+#fotophotoshop img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  #texsphyton h1,
+  #texsjava h1,
+  #texsword h1,
+  #texscanva h1,
+  #texspowerpoint h1,
+  #texsexcel h1,
+  #texsilustrator h1,
+  #texsphotoshop h1,
+  #texsweb h1 {
+    font-size: 42pt;
+  }
+
+  #body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  #videophyton video,
+  #videojava video,
+  #videoword video,
+  #videocanva video,
+  #videopowerpoint video,
+  #videoweb video,
+  #fotoexcel img,
+  #fotoilustrator img,
+  #fotophotoshop img {
+    height: 240px;
+  }
+}
+
+@media (max-width: 640px) {
+  #body {
+    padding: 24px 12px 40px 12px;
+    gap: 24px;
+  }
+
+  #title h1 {
+    font-size: 30pt;
+  }
+
+  #phytonmain,
+  #javamain,
+  #wordmain,
+  #canvamain,
+  #powerpointmain,
+  #excelmain,
+  #ilustratormain,
+  #photoshopmain,
+  #webmain {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  #texsphyton,
+  #texsjava,
+  #texsword,
+  #texscanva,
+  #texspowerpoint,
+  #texsexcel,
+  #texsilustrator,
+  #texsphotoshop,
+  #texsweb {
+    width: 100%;
+    flex: none;
+  }
+  #texsphyton h1,
+  #texsjava h1,
+  #texsword h1,
+  #texscanva h1,
+  #texspowerpoint h1,
+  #texsexcel h1,
+  #texsilustrator h1,
+  #texsphotoshop h1,
+  #texsweb h1 {
+    font-size: 28pt;
+  }
+
+  #videophyton,
+  #videojava,
+  #videoword,
+  #videocanva,
+  #videopowerpoint,
+  #videoweb,
+  #fotoexcel,
+  #fotoilustrator,
+  #fotophotoshop {
+    width: 100%;
+  }
+
+  #videophyton video,
+  #videojava video,
+  #videoword video,
+  #videocanva video,
+  #videopowerpoint video,
+  #videoweb video {
+    height: auto;
+    max-width: 100%;
+  }
+  #fotoexcel img,
+  #fotoilustrator img,
+  #fotophotoshop img {
+    height: auto;
+    max-width: 100%;
+  }
+}
